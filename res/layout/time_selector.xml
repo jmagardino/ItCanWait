@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+	<TextView 
+	    android:text="@string/select_time"
+	    android:textSize="24sp"
+	    android:gravity="center"/>
+     <TableRow
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="0"
+         android:gravity="center|bottom" >
+        
+	    <NumberPicker
+	        android:id="@+id/numberPickerHour"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+	    <NumberPicker
+	        android:id="@+id/numberPickerMinute1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    
+	</TableRow>
+	
+     <TableRow
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="0"
+         android:gravity="center|bottom" >
+        
+	    <TextView
+	        android:id="@+id/hourlabel"
+	        android:text="    HOUR"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+	    <TextView
+	        android:id="@+id/minutelabel"
+	        android:text="   MINUTE"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    
+	</TableRow>
+	
+    <Button 
+         android:id="@+id/start_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/start" />
+    
+</TableLayout>
